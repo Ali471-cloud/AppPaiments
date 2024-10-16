@@ -1,7 +1,8 @@
-﻿internal class Program
+﻿public abstract class Paiement
 {
-    private static void Main(string[] args)
-    {
-        Console.WriteLine("Hello, World!");
-    }
+    public string IdTransaction { get; set; }
+    public DateTime DateTransaction { get; set; }
+    public decimal Montant { get; set; }
+
+    public abstract void AfficherDetails();
 }
